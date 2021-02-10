@@ -45,7 +45,7 @@ def prime_check(n):
     :return: bool
     """
     i, j = fermat_factorization(n)
-    if i == n:
+    if (i == n and i != 1) or (i == 1 and j == 2):
         return True
     else:
         return False
